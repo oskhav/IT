@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="test.css">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #080707;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
-hei
-<h1>hei</h1>
-<p>This is a paragraph.</p>
-  </style>
-  </head>
-  <body>
-  
-    <img src="IMG_4006-2 – Kopi.jpg" width="300">
+
+
+<div class="grid-container">
+  <div class="item1">oskar sin nettside</div>
+
+
+    <div class="item"><li><a href="#">Hjem    </a></li>
+    <li><a href="#">Om meg</a></li>
+    <li><a href="#">m</a></li>
+    <li><a href="#">Kontakt</a></li></div>
+  <div class="item3">Main</div>  
+  <div class="item5">Right</div>
+  <div class="item6">Footer</div>
+</div>
+
 </body>
 </html>
